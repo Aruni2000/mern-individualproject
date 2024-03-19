@@ -7,9 +7,11 @@ import SellerLogin from './pages/SellerLogin';
 import SellerProfile from './pages/SellerProfile';
 import SellerSignUp from './pages/SellerSignUp';
 import SellYourSpices from './pages/SellYourSpices';
+import Header from './components/Header';
 
 export default function App() {
   return <BrowserRouter>
+  <Header />
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/Admin-login" element={<AdminLogin />} />
